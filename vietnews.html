@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johnny World News</title>
+    <link rel="icon" type="image/x-icon" href="/Favicon/FMLfavicon.ico" />
+    <link rel="apple-touch-icon" href="/Favicon/FMLapple-touch-icon.png" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      id="x-stack-css"
+      href="https://nguoiviet.tv/wp-content/cache/fvm/min/1656291973-css98d7b0e9fcab42888e2830d6b365fd7b9980ef4e03f737588c4f67a91d8d7.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="x-cranium-migration-css"
+      href="https://nguoiviet.tv/wp-content/cache/fvm/min/1656291973-csse1956c30feeecd90b205e61e60a21a40649178d6fabf191677cfa822ff3bf.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="tablepress-default-css"
+      href="https://nguoiviet.tv/wp-content/cache/fvm/min/1656291973-css43c6b68e7704c56952ddf4905fde3b870e2577ac50bde9fedcb951c853e28.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://nguoiviet.tv/wp-content/cache/fvm/min/1656291973-cssabff4cdc59463934b642148f8b4177f4266ade391e15bda90370b9e9e8569.css"
+      type="text/css"
+      media="all"
+      data-x-google-fonts
+    />
+    <link rel="stylesheet" href="CSS/style2.css" />
+  </head>
+  <body>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+      integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
+      data-cf-beacon='{"rayId":"733380687e58a223","version":"2022.6.0","r":1,"token":"48f845482be041789f6988609e7b998a","si":100}'
+      crossorigin="anonymous"
+    ></script>
+
+    <div>
+      <h1 class="title">&#128308; Tin Tức Trực Tiếp Tiếng Việt &#128308;</h1>
+      <h1 class="title">Kênh LSTV & SET (Hải Ngoại)</h1>
+    </div>
+
+    <div class="flexbox">
+      <div class="vietnews">
+        <video
+          autoplay=""
+          class="vjs-tech"
+          preload="auto"
+          data-setup='{"fluid":true}'
+          id="vjs_video_3_html5_api"
+          tabindex="-1"
+          src="blob:https://nguoiviet.tv/99bcd72a-5755-40f4-8304-f6ea47e99c58"
+          style="outline: none"
+        >
+          <source
+            src="https://5dcab9aed5331.streamlock.net/SET1/livestream/chunklist_w848886703.m3u8"
+            type="application/x-mpegURL"
+          />
+        </video>
+      </div>
+
+      <div class="vietnews">
+        <video
+          class="video-js vjs-default-skin vjs-big-play-centered"
+          controls
+          preload="auto"
+          width="450px"
+          height="250"
+          data-setup='{"fluid":true}'
+        >
+          <source
+            src="https://5dcab9aed5331.streamlock.net/SET1/livestream/chunklist_w848886703.m3u8"
+            type="application/x-mpegURL"
+          />
+        </video>
+      </div>
+
+      <link
+        href="https://nguoiviet.tv/wp-content/cache/fvm/min/1656291973-cssd02ed280a2c1ad6a3b7035f44131b4b9cbbe447ef384b6c99c25c06b9a82d.css"
+        rel="stylesheet"
+        media="all"
+      />
+      <script src="/video.min.js"></script>
+
+      <!-- <div class="flexbox">
+      <script src="/hls.js"></script>
+      <div class="vietnews3">
+          <video width="360px" height="250" controls="over" id="video"></video>
+          <script>
+      
+                                                          if (Hls.isSupported()) {
+                                                              var video = document.getElementById('video');
+                                                              var hls = new Hls();
+                                                              hls.loadSource('https://5dcabf026b188.streamlock.net/SET22/livestream/playlist.m3u8');
+                                                              hls.attachMedia(video);
+                                                              hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                                                                  // video.play();
+                                                              });
+                                                          }
+      
+      
+      
+                                                          else //  supported on platforms that do not have MSE enabled.
+                                                          // When the browser has built-in  support , we can provide an  manifest directly to the video element throught the `src` property.
+                                                          // This is using the built-in support of the plain video element.
+                                                          if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                                                              video.src = 'https://5dcabf026b188.streamlock.net/SET22/livestream/playlist.m3u8';
+                                                              video.addEventListener('canplay', function() {
+                                                                  video.play();
+                                                              });
+                                                          }
+                                                          </script>
+      </div>
+      
+      
+      </div> -->
+    </div>
+  </body>
+</html>
