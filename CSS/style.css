@@ -1,12 +1,12 @@
 html {
-  background: #333;
-  -moz-background: #333;
-  -webkit-background: #333;
-  -o-background: #333;
+  background: rgba(1, 4, 12, 0.948);
+  -moz-background: rgba(1, 4, 12, 0.948);
+  -webkit-background: rgba(1, 4, 12, 0.948);
+  -o-background: rgba(1, 4, 12, 0.948);
   background-image: url(/assets/dragon-scales.svg);
-  /* -moz-background-image: url(/assets/endless-constellation.svg);
-  -webkit-background-image: url(/assets/endless-constellation.svg);
-  -o-background-image: url(/assets/endless-constellation.svg); */
+  -moz-background-image: url(/assets/dragon-scales.svg);
+  -webkit-background-image: url(/assets/dragon-scales.svg);
+  -o-background-image: url(/assets/dragon-scales.svg);
   min-height: 100vh;
   min-width: 100vw;
 }
