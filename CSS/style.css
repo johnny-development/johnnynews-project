@@ -206,7 +206,11 @@ a {
 }
 
 .thumb:hover {
-  transform: scale(1.1);
+  transform: translateY(4px);
+}
+
+.thumb:active {
+  transform: translateY(4px);
 }
 
 img {
@@ -310,6 +314,10 @@ button {
 button:hover {
   background: rgb(208, 202, 190);
   color: #070707;
-  transform: skew(-10deg);
+  transform: translateY(4px);
   border: 1px solid #070707;
+}
+
+.button:active {
+  transform: translateY(4px);
 }
