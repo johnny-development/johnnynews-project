@@ -226,64 +226,11 @@ img {
   max-width: 100%;
 }
 
-.vietnews {
-  border-bottom: #b25106 solid 1px;
-  /* box-shadow: 0px 5px 25px -5px #8d5252; */
-  box-shadow: 0px 5px 5px 0px #000000;
-  -moz-box-shadow: 0px 5px 5px 0px #000000;
-  -webkit-box-shadow: 0px 5px 5px 0px #000000;
-  margin: 20px;
-  border-radius: 5px;
-  width: 450px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 100%;
-}
-
-.vietnews4 {
-  border: #b25106 solid 4px;
-  box-shadow: 0px 5px 5px 0px #000000;
-  -moz-box-shadow: 0px 5px 5px 0px #000000;
-  -webkit-box-shadow: 0px 5px 5px 0px #000000;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  width: 390px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 100%;
-}
-
-.vietnews3 {
-  border: #b25106 solid 4px;
-  box-shadow: 0px 5px 5px 0px #000000;
-  -moz-box-shadow: 0px 5px 5px 0px #000000;
-  -webkit-box-shadow: 0px 5px 5px 0px #000000;
-  margin: 20px;
-  border-radius: 8px;
-  width: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 100%;
-}
-
 iframe {
   border-radius: 8px;
-  /* box-shadow: 0px 5px 5px 0px #000000;
-  -moz-box-shadow: 0px 5px 5px 0px #000000;
-  -webkit-box-shadow: 0px 5px 5px 0px #000000; */
 }
 
-.loading {
-  border-top: 1px solid #b25106;
-  border-bottom: 1px solid #b25106;
-  border-radius: 10px;
-  /* box-shadow: 0px 8px 13px -5px #8d5252; */
-  box-shadow: 0px 5px 5px 0px #000000;
-  -moz-box-shadow: 0px 5px 5px 0px #000000;
-  -webkit-box-shadow: 0px 5px 5px 0px #000000;
+.saigontv {
   justify-items: center;
   align-self: center;
   justify-content: center;
@@ -293,7 +240,7 @@ iframe {
   font-size: 1.5rem;
 }
 
-.home-title {
+.title {
   margin-top: 10px;
   color: #ffffff;
   font-size: 2rem;
@@ -330,67 +277,9 @@ iframe {
 .title {
   margin-top: 5px;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 3px 3px 2px rgb(0, 0, 0);
-}
-
-.title-tn {
-  padding-top: 3px;
-  color: #ffffff;
-  font-size: 1.2rem;
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  margin-bottom: 8px;
-  text-shadow: 3px 3px 2px rgb(0, 0, 0);
-}
-
-.title-pc {
-  padding-top: 6px;
-  margin-bottom: -5px;
-  color: #ffffff;
-  font-size: 1.2rem;
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 3px 3px 2px rgb(0, 0, 0);
-}
-
-.title-sg {
-  margin-bottom: -10px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  color: #ffffff;
-  font-size: 1.2rem;
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 3px 3px 2px rgb(0, 0, 0);
-}
-
-.title1 {
-  padding: 10px;
-  color: rgb(255, 255, 255);
-  font-size: 1.2rem;
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 3px 3px 2px rgb(0, 0, 0);
-}
-
-.warn {
-  font-size: 0.8em;
-  padding-top: 8px;
-  color: red;
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 3px 3px 2px rgb(0, 0, 0);
-}
-
-.warn1 {
-  font-size: 0.8em;
-  margin-top: 1px;
-  color: red;
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Black Ops One", cursive;
   text-shadow: 3px 3px 2px rgb(0, 0, 0);
 }
 
@@ -421,14 +310,16 @@ iframe {
 }
 
 ul#episodes {
-  margin: 10px;
+  /* margin: 10px; */
   padding: 10px;
   width: 75%;
 }
 
-ul#episodes > li {
+/* ul#episodes > li {
   list-style-type: none;
-}
+  text-shadow: 3px 3px 2px rgb(0, 0, 0);
+  font-weight: bolder;
+} */
 
 button {
   width: 100%;
@@ -447,6 +338,7 @@ button {
   font-size: 16px;
   cursor: pointer;
   border-radius: 10px;
+  font-weight: bolder;
 }
 
 button:hover {
@@ -473,6 +365,7 @@ h2 {
   font-size: 1.5rem;
   text-shadow: 3px 3px 2px rgb(0, 0, 0);
   color: rgb(220, 212, 195);
+  font-family: "Black Ops One", cursive;
 }
 
 input {
