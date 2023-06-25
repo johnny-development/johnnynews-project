@@ -44,5 +44,5 @@ document.onscroll = function (e) {
 
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
-  loader.style.display = "none";
+  setTimeout(() => (loader.style.display = "none"), 2000);
 });
