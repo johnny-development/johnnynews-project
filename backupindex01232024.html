@@ -7,12 +7,13 @@
     <title>World News</title>
     <link rel="icon" type="image/x-icon" href="/Favicon/FMLfavicon.ico">
     <link rel="apple-touch-icon" href="/Favicon/FMLapple-touch-icon.png">
-    <link rel="stylesheet" href="CSS/teststyle.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/code.jquery.com_mobile_1.4.2_jquery.mobile-1.4.2.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <body>
@@ -211,18 +212,28 @@
     <div class="popup popupimg">
       <span class="popuptext popupimg" id="myPopup">Believe not all that you see nor half of what you hear </span>
     </div>
-
-    <div class="flexbox1">
+<div id="podcast">
+  <h1 class="title">
+    &#127897; Podcasts &#127897;
+  </h1>
+</div>
+<div style="margin-bottom: -10px;" class="flexbox">
 <ul id="episodes">
   <li>
-    <h1 class="title">
-      &#127897; Podcasts &#127897;
-   
-   </h1>
     <button id="firstactivebutton" onClick="document.getElementById('episodes').scrollIntoView();" data-spotify-id="spotify:show:4rOoJ6Egrf8K2IrywzwOMk">
       The Joe Rogan Experience
     </button>
   </li>
+  <!-- <li>
+    <button onClick="document.getElementById('episodes').scrollIntoView();" data-spotify-id="spotify:show:1CtRqrNGqpAttWyft6nVss">
+      Drink Champs
+    </button>
+  </li> -->
+  <!-- <li>
+    <button data-spotify-id="spotify:show:2MAi0BvDc6GTFvKFPXnkCL">
+      Lex Fridman
+    </button>
+  </li> -->
   <li>
     <button onClick="document.getElementById('episodes').scrollIntoView();" data-spotify-id="spotify:show:3FVOp5guWNV4b0S9pfuVcw">
       PBD Podcast
@@ -243,88 +254,147 @@
       On Purpose With Jay Shetty
     </button>
   </li>
+  <!-- <li>
+    <button onClick="document.getElementById('episodes').scrollIntoView();"  data-spotify-id="spotify:show:4rOoJ6Egrf8K2IrywzwOMk">
+      The Joe Rogan Experience
+    </button>
+  </li> -->
 </ul>
-
-<div id="spot">
-<div id="embed-iframe">
+</div>
+<div id="spot" class="flexbox">
+<div id="embed-iframe"></div>
 <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async>
 </script>
-
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   window.onSpotifyIframeApiReady = (IFrameAPI) => {
-    let element = document.getElementById("embed-iframe");
+    let element = document.getElementById('embed-iframe');
     let options = {
-      width: "100%",
-      // height: "100%",
-      theme: "dark",
-      uri: "spotify:show:4rOoJ6Egrf8K2IrywzwOMk",
-    };
+        width: '90%',
+        height: '250px',
+        uri: 'spotify:show:5EqqB52m2bsr4k1Ii7sStc'
+      };
     let callback = (EmbedController) => {
-      document
-        .querySelectorAll("ul#episodes > li > button")
-        .forEach((episode) => {
-          episode.addEventListener("click", () => {
-            EmbedController.loadUri(episode.dataset.spotifyId);
+      document.querySelectorAll('ul#episodes > li > button').forEach(
+        episode => {
+          episode.addEventListener('click', () => {
+            EmbedController.loadUri(episode.dataset.spotifyId)
           });
-        });
+        })
     };
     IFrameAPI.createController(element, options, callback);
   };
-</script>
+</script> -->
 </div>
+
+<div style="margin-top: 10px;" class="astrodivider"><div class="astrodividermask"></div><span></span></div>
+
+<div id="podcast">
+  <h1 class="title">&#127911; Music Mixes &#127911;  </h1>
+  
 </div>
+
+<div style="margin-bottom: -10px;" class="flexbox">
   <ul id="episodes">
     <li>
-      <h1 class="title">
-        &#127911; Music &#127911;
-     
-     </h1>
       <button onClick="document.getElementById('spot').scrollIntoView();"  data-spotify-id="spotify:playlist:37i9dQZF1E34YSvdXVDC03">
-         Daily Mix &#10112;
+        &#8686; Daily Mix &#10112;
       </button>
     </li>
     <li>
       <button onClick="document.getElementById('spot').scrollIntoView();"  data-spotify-id="spotify:playlist:37i9dQZF1E37HKvFsMlRYG">
-         Daily Mix &#10113;
+        &#8686; Daily Mix &#10113;
       </button>
     </li>
     <li>
       <button onClick="document.getElementById('spot').scrollIntoView();" 
         data-spotify-id="spotify:playlist:37i9dQZF1E374JM6VPJNkN"
       >
-       Daily Mix &#10114;
+      &#8686; Daily Mix &#10114;
       </button>
     </li>
     <li>
       <button onClick="document.getElementById('spot').scrollIntoView();"   data-spotify-id="spotify:playlist:37i9dQZF1E39EDd3IS0PnS">
-         Daily Mix &#10115;
+        &#8686; Daily Mix &#10115;
       </button>
     </li>
     <li>
       <button onClick="document.getElementById('spot').scrollIntoView();" data-spotify-id="spotify:playlist:37i9dQZEVXcEv3s8Tqewuv">
-         Weekly Mix &#10070;
+        &#8686; Weekly Mix &#10070;
       </button>
     </li>
-
+    <!-- <li>
+      <button onClick="document.getElementById('spot').scrollIntoView();"  data-spotify-id="spotify:playlist:37i9dQZF1EVHGWrwldPRtj">
+        &#8686; Chill Mix &#127925;
+      </button>
+    </li>
+    <li>
+      <button onClick="document.getElementById('spot').scrollIntoView();"  data-spotify-id="spotify:playlist:37i9dQZF1EQnqst5TRi17F?si=2c62d5595dcc4752&nd=1">
+        &#8686; Hip Hop Mix &#127925;
+      </button>
+    </li>
+    <li>
+      <button onClick="document.getElementById('spot').scrollIntoView();" 
+        data-spotify-id="spotify:playlist:37i9dQZF1EQoqCH7BwIYb7"
+      >
+      &#8686; R&B Mix &#127925;
+      </button>
+    </li>
+    <li>
+      <button onClick="document.getElementById('spot').scrollIntoView();"   data-spotify-id="spotify:playlist:37i9dQZF1EQn2GRFTFMl2A">
+        &#8686; 90s Mix &#127925;
+      </button>
+    </li>
+    <li>
+      <button onClick="document.getElementById('spot').scrollIntoView();" data-spotify-id="spotify:playlist:37i9dQZF1EQn4jwNIohw50">
+        &#8686; 2000s Mix &#127925;
+      </button>
+    </li> -->
   </ul>
+</div>
+<div class="flexbox">
+  <div id="embed-iframe"></div>
+  <script
+    src="https://open.spotify.com/embed-podcast/iframe-api/v1"
+    async
+  ></script>
+  <script type="text/javascript">
+    window.onSpotifyIframeApiReady = (IFrameAPI) => {
+      let element = document.getElementById("embed-iframe");
+      let options = {
+        width: "100%",
+        // height: "300px",
+        theme: "dark",
+        uri: "spotify:show:4rOoJ6Egrf8K2IrywzwOMk",
+      };
+      let callback = (EmbedController) => {
+        document
+          .querySelectorAll("ul#episodes > li > button")
+          .forEach((episode) => {
+            episode.addEventListener("click", () => {
+              EmbedController.loadUri(episode.dataset.spotifyId);
+            });
+          });
+      };
+      IFrameAPI.createController(element, options, callback);
+    };
+  </script>
 
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script>
-  //jquery script for unactive to active button pressed
-  $('button').on('click', function(){
-  $('button').removeClass('active_button');
-  $(this).addClass('active_button');
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script>
+    //jquery script for unactive to active button pressed
+    $('button').on('click', function(){
+    $('button').removeClass('active_button');
+    $(this).addClass('active_button');
 });
 
 //button active on page load script
 $(document).ready(function(){
-  $('#firstactivebutton').addClass('active_button');
+    $('#firstactivebutton').addClass('active_button');
 });
-</script>
-
+  </script>
 </div>
-<div  class="astrodivider"><div class="astrodividermask"></div><span></span></div>
+
+<div style="margin-top: -10px;" class="astrodivider"><div class="astrodividermask"></div><span></span></div>
 <div>
   <h1 class="title">
       World News <br>

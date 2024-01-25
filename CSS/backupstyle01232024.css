@@ -1,14 +1,13 @@
 html {
-  background: #161616;
-  -moz-background: #161616;
-  -webkit-background: #161616;
-  -o-background: #161616;
+  background: rgba(23, 27, 1, 0.986);
+  /* -moz-background: rgba(1, 4, 12, 0.948);
+  -webkit-background: rgba(1, 4, 12, 0.948);
+  -o-background: rgba(1, 4, 12, 0.948); */
   background-image: url(/assets/scattered-forcefields-new-dark.svg);
-  -moz-background-image: url(/assets/scattered-forcefields-new-dark.svg);
-  -webkit-background-image: url(/assets/scattered-forcefields-new-dark.svg);
-  -o-background-image: url(/assets/scattered-forcefields-new-dark.svg);
+  /* -moz-background-image: url(/assets/dragon-scales.svg);
+  -webkit-background-image: url(/assets/dragon-scales.svg);
+  -o-background-image: url(/assets/dragon-scales.svg); */
   font-size: 18px;
-  font-family: sans-serif;
 }
 
 * {
@@ -89,7 +88,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .nav-menu {
@@ -148,18 +146,18 @@ a {
   }
 
   /* .bar:nth-child(1) {
-      width: 35px;
-      margin-left: 5px;
-    }
-  
-    .bar:nth-child(2) {
-      width: 45px;
-    }
-  
-    .bar:nth-child(3) {
-      width: 35px;
-      margin-left: 5px;
-    } */
+    width: 35px;
+    margin-left: 5px;
+  }
+
+  .bar:nth-child(2) {
+    width: 45px;
+  }
+
+  .bar:nth-child(3) {
+    width: 35px;
+    margin-left: 5px;
+  } */
 
   .hamburger.active .bar:nth-child(2) {
     background-color: #7f8fa6;
@@ -194,22 +192,23 @@ a {
     position: fixed;
     width: 100%;
     left: 100%;
-    top: 70px;
+    top: 60px;
     gap: 0;
     flex-direction: column;
+    /* background-color: rgba(1, 4, 12, 0.948); */
     text-align: center;
     transition: all 0.3s ease-in-out;
   }
 
   .nav-item {
-    background-color: #201f1fcf;
+    background-color: #201f1fc8;
+    /* background-color: #000000dc; */
     border: 10px solid rgba(255, 255, 255, 0);
     border-radius: 25px;
-    font-size: 1.1rem;
-    box-shadow: #8f8c8c70 0px 0px 0px 1px;
-    -webkit-box-shadow: #8f8c8c70 0px 0px 0px 1px;
-    -moz-box-shadow: #8f8c8c70 0px 0px 0px 1px;
-    -o-box-shadow: #8f8c8c70 0px 0px 0px 1px;
+    box-shadow: #c6d3d3c7 0px 1px 0px 0px;
+    /* margin: 6px 0; */
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 
   .nav-menu.active {
@@ -239,6 +238,9 @@ a {
   box-shadow: 0px 3px 3px 0px #000000;
   -moz-box-shadow: 0px 3px 3px 0px #000000;
   -webkit-box-shadow: 0px 3px 3px 0px #000000;
+  /* box-shadow: 0px 8px 10px -5px #8d5252;
+  -moz-box-shadow: 0px 10px 13px -5px #8d5252;
+  -webkit-box-shadow: 0px 8px 10px -5px #8d5252; */
 }
 
 .thumb:hover {
@@ -273,6 +275,11 @@ iframe {
   border-radius: 8px;
 }
 
+#podcast {
+  margin-top: -10px;
+  margin-bottom: -35px;
+}
+
 .home {
   font-size: 1.5rem;
 }
@@ -302,7 +309,7 @@ iframe {
 }
 
 .title {
-  /* margin-top: 5px; */
+  margin-top: 5px;
   color: #ffffff;
   font-size: 1.5rem;
   text-align: center;
@@ -322,14 +329,8 @@ iframe {
 
 ul#episodes {
   /* margin: 10px; */
-  padding: 15px;
-  /* padding-left: 10px; */
-  /* width: 300px; */
-  width: 80%;
-  max-width: 350px;
-  margin-top: -25px;
-  margin-left: -10px;
-  margin-bottom: -5px;
+  padding: 10px;
+  width: 75%;
 }
 
 button {
@@ -341,7 +342,7 @@ button {
   background-color: rgba(142, 134, 117, 0.072);
   border: 1px solid #d89c5260;
   color: rgb(220, 212, 195);
-  /* padding: 5px 10px; */
+  padding: 5px 10px;
   margin: 5px;
   text-align: center;
   font-size: 16px;
@@ -377,18 +378,8 @@ button {
 
 #spot {
   border-radius: 15px;
-  box-shadow: 0px 0px 2px 0px #70606065;
-  /* margin: 0px 10px 0px 10px; */
-  /* margin-left: 10px; */
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding: 5px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  -moz-backdrop-filter: blur(10px);
-  -o-backdrop-filter: blur(10px);
-  width: 100%;
-  max-width: 600px;
+  box-shadow: 0px 1px 8px 0px #000000c3;
+  margin: 0px 10px 0px 10px;
 }
 
 .astrodivider {
@@ -567,20 +558,4 @@ button {
   opacity: 1;
   filter: "alpha(opacity=100)";
   -ms-filter: "alpha(opacity=100)";
-}
-
-.flexbox1 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.tradingview-widget-container {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  -moz-backdrop-filter: blur(10px);
-  -o-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(112, 102, 102, 0.209);
-  border-top: 1px solid rgba(112, 102, 102, 0.209);
 }

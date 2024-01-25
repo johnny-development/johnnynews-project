@@ -42,7 +42,30 @@ document.onscroll = function (e) {
 
 // preloader script
 
-var loader = document.getElementById("preloader");
-window.addEventListener("load", function () {
-  setTimeout(() => (loader.style.display = "none"), 2000);
+// var loader = document.getElementById("preloader");
+// window.addEventListener("load", function () {
+//   setTimeout(() => (loader.style.display = "none"), 0);
+// });
+
+//creator popup script
+
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+//scroll to top
+
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 700) {
+      $("#scroll").fadeIn();
+    } else {
+      $("#scroll").fadeOut();
+    }
+  });
+  $("#scroll").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 100);
+    return false;
+  });
 });
